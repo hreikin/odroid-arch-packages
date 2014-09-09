@@ -15,6 +15,7 @@ xf86-video-armsoc-dsd
 xf86-video-fbturbo-git
 xorg-server-dsd
 ```
+You may also need 'xf86-video-fbdev' from the official repos.
 
 Method 1
 --------
