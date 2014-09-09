@@ -1,6 +1,6 @@
 Odroid U2/3 - Arch Linux - Mali/xorg-armsoc
 ===========================================
-This is  fork of gripped's repo odroid-u2-pkgbuilds, i made this to try and update the PKGBUILD's and keep them moving with Arch, the orignal README will be left in the repo for reference, the other libs are still available, i just made this repo for cleanliness/order/my own sanity and it only includes packages i am working on.
+This is  fork of gripped's repo odroid-u2-pkgbuilds, i made this to try and update the PKGBUILD's and keep them moving with Arch, the orignal README will be left in the repo for reference, the other libs are still available, i made this repo for cleanliness/order/my own sanity and it only includes packages i am working on.
 
 Install/Build Instructions
 ==========================
