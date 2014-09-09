@@ -1,3 +1,0 @@
-util/u_debug_flush.lo: util/u_debug_flush.c /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:

@@ -1,3 +1,0 @@
-util/u_debug_refcnt.lo: util/u_debug_refcnt.c /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:

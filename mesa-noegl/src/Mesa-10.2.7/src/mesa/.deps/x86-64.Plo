@@ -1,5 +1,0 @@
-x86-64.lo: x86-64/x86-64.c /usr/include/stdc-predef.h x86-64/x86-64.h
-
-/usr/include/stdc-predef.h:
-
-x86-64/x86-64.h:
