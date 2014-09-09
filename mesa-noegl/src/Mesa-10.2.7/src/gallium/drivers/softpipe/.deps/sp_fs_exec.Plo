@@ -1,0 +1,297 @@
+sp_fs_exec.lo: sp_fs_exec.c /usr/include/stdc-predef.h sp_context.h \
+ ../../../../src/gallium/include/pipe/p_context.h \
+ ../../../../src/gallium/include/pipe/p_compiler.h \
+ ../../../../include/c99_compat.h \
+ ../../../../src/gallium/include/pipe/p_config.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/limits.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-hard.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/byteswap-16.h /usr/include/stdlib.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/bits/select2.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/bits/stdlib.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h \
+ /usr/include/bits/string3.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdbool.h \
+ ../../../../src/gallium/include/pipe/p_format.h \
+ ../../../../src/gallium/include/pipe/p_video_enums.h \
+ ../../../../src/gallium/include/pipe/p_defines.h \
+ ../../../../src/gallium/auxiliary/util/u_blitter.h \
+ ../../../../src/gallium/auxiliary/util/u_framebuffer.h \
+ ../../../../src/gallium/include/pipe/p_compiler.h \
+ ../../../../src/gallium/include/pipe/p_state.h \
+ ../../../../src/gallium/auxiliary/util/u_inlines.h \
+ ../../../../src/gallium/include/pipe/p_defines.h \
+ ../../../../src/gallium/include/pipe/p_shader_tokens.h \
+ ../../../../src/gallium/include/pipe/p_screen.h \
+ ../../../../src/gallium/include/pipe/p_format.h \
+ ../../../../src/gallium/include/pipe/p_video_enums.h \
+ ../../../../src/gallium/auxiliary/util/u_debug.h \
+ ../../../../src/gallium/auxiliary/os/os_misc.h /usr/include/signal.h \
+ /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/bits/unistd.h \
+ ../../../../src/gallium/auxiliary/util/u_debug_describe.h \
+ ../../../../src/gallium/auxiliary/util/u_debug_refcnt.h \
+ ../../../../src/gallium/include/pipe/p_config.h \
+ ../../../../src/gallium/auxiliary/util/u_atomic.h \
+ ../../../../src/gallium/auxiliary/util/u_box.h \
+ ../../../../src/gallium/auxiliary/util/u_math.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/float.h \
+ /usr/include/strings.h \
+ ../../../../src/gallium/auxiliary/draw/draw_vertex.h \
+ ../../../../src/gallium/auxiliary/util/u_memory.h \
+ ../../../../src/gallium/auxiliary/util/u_pointer.h \
+ ../../../../src/gallium/auxiliary/os/os_memory.h \
+ ../../../../src/gallium/auxiliary/os/os_memory_stdc.h sp_quad_pipe.h \
+ sp_state.h ../../../../src/gallium/auxiliary/tgsi/tgsi_scan.h sp_fs.h \
+ sp_quad.h ../../../../src/gallium/auxiliary/tgsi/tgsi_exec.h \
+ ../../../../src/gallium/auxiliary/tgsi/tgsi_parse.h
+
+/usr/include/stdc-predef.h:
+
+sp_context.h:
+
+../../../../src/gallium/include/pipe/p_context.h:
+
+../../../../src/gallium/include/pipe/p_compiler.h:
+
+../../../../include/c99_compat.h:
+
+../../../../src/gallium/include/pipe/p_config.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/limits.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-hard.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/bits/string3.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdbool.h:
+
+../../../../src/gallium/include/pipe/p_format.h:
+
+../../../../src/gallium/include/pipe/p_video_enums.h:
+
+../../../../src/gallium/include/pipe/p_defines.h:
+
+../../../../src/gallium/auxiliary/util/u_blitter.h:
+
+../../../../src/gallium/auxiliary/util/u_framebuffer.h:
+
+../../../../src/gallium/include/pipe/p_compiler.h:
+
+../../../../src/gallium/include/pipe/p_state.h:
+
+../../../../src/gallium/auxiliary/util/u_inlines.h:
+
+../../../../src/gallium/include/pipe/p_defines.h:
+
+../../../../src/gallium/include/pipe/p_shader_tokens.h:
+
+../../../../src/gallium/include/pipe/p_screen.h:
+
+../../../../src/gallium/include/pipe/p_format.h:
+
+../../../../src/gallium/include/pipe/p_video_enums.h:
+
+../../../../src/gallium/auxiliary/util/u_debug.h:
+
+../../../../src/gallium/auxiliary/os/os_misc.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/asm/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+../../../../src/gallium/auxiliary/util/u_debug_describe.h:
+
+../../../../src/gallium/auxiliary/util/u_debug_refcnt.h:
+
+../../../../src/gallium/include/pipe/p_config.h:
+
+../../../../src/gallium/auxiliary/util/u_atomic.h:
+
+../../../../src/gallium/auxiliary/util/u_box.h:
+
+../../../../src/gallium/auxiliary/util/u_math.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/float.h:
+
+/usr/include/strings.h:
+
+../../../../src/gallium/auxiliary/draw/draw_vertex.h:
+
+../../../../src/gallium/auxiliary/util/u_memory.h:
+
+../../../../src/gallium/auxiliary/util/u_pointer.h:
+
+../../../../src/gallium/auxiliary/os/os_memory.h:
+
+../../../../src/gallium/auxiliary/os/os_memory_stdc.h:
+
+sp_quad_pipe.h:
+
+sp_state.h:
+
+../../../../src/gallium/auxiliary/tgsi/tgsi_scan.h:
+
+sp_fs.h:
+
+sp_quad.h:
+
+../../../../src/gallium/auxiliary/tgsi/tgsi_exec.h:
+
+../../../../src/gallium/auxiliary/tgsi/tgsi_parse.h:

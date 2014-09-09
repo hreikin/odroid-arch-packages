@@ -1,0 +1,3 @@
+x86sse.lo: x86/rtasm/x86sse.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

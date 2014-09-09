@@ -1,0 +1,293 @@
+get.lo: main/get.c /usr/include/stdc-predef.h main/glheader.h \
+ ../../include/GL/gl.h ../../include/GL/glext.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h \
+ /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-hard.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h main/context.h \
+ main/imports.h main/compiler.h /usr/include/assert.h \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/limits.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/bits/select2.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
+ /usr/include/bits/stdlib-float.h /usr/include/bits/stdlib.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/bits/stdio2.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h \
+ /usr/include/bits/string3.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/float.h \
+ ../../include/c99_compat.h main/errors.h main/mtypes.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdbool.h \
+ main/glheader.h main/config.h ../../src/mapi/glapi/glapi.h \
+ ../../src/mapi/u_thread.h ../../src/mapi/u_compiler.h \
+ ../../include/c11/threads.h /usr/include/bits/timex.h \
+ ../../include/c11/threads_posix.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/bits/unistd.h /usr/include/sched.h \
+ /usr/include/bits/sched.h /usr/include/pthread.h \
+ /usr/include/bits/setjmp.h math/m_matrix.h main/simple_list.h \
+ main/formats.h main/dd.h main/blend.h main/formats.h main/enable.h \
+ main/enums.h main/extensions.h main/get.h main/macros.h main/state.h \
+ main/texcompress.h main/framebuffer.h main/samplerobj.h main/stencil.h \
+ main/get_hash.h
+
+/usr/include/stdc-predef.h:
+
+main/glheader.h:
+
+../../include/GL/gl.h:
+
+../../include/GL/glext.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-hard.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+main/context.h:
+
+main/imports.h:
+
+main/compiler.h:
+
+/usr/include/assert.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/limits.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/bits/string3.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/float.h:
+
+../../include/c99_compat.h:
+
+main/errors.h:
+
+main/mtypes.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdbool.h:
+
+main/glheader.h:
+
+main/config.h:
+
+../../src/mapi/glapi/glapi.h:
+
+../../src/mapi/u_thread.h:
+
+../../src/mapi/u_compiler.h:
+
+../../include/c11/threads.h:
+
+/usr/include/bits/timex.h:
+
+../../include/c11/threads_posix.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/pthread.h:
+
+/usr/include/bits/setjmp.h:
+
+math/m_matrix.h:
+
+main/simple_list.h:
+
+main/formats.h:
+
+main/dd.h:
+
+main/blend.h:
+
+main/formats.h:
+
+main/enable.h:
+
+main/enums.h:
+
+main/extensions.h:
+
+main/get.h:
+
+main/macros.h:
+
+main/state.h:
+
+main/texcompress.h:
+
+main/framebuffer.h:
+
+main/samplerobj.h:
+
+main/stencil.h:
+
+main/get_hash.h:

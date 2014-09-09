@@ -1,0 +1,39 @@
+indirect_size.lo: indirect_size.c /usr/include/stdc-predef.h \
+ /usr/include/X11/Xfuncproto.h ../../include/GL/gl.h \
+ ../../include/GL/glext.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h \
+ /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-hard.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h indirect_size.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+../../include/GL/gl.h:
+
+../../include/GL/glext.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-hard.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+indirect_size.h:

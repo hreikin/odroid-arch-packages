@@ -1,0 +1,3 @@
+vmw_powf.lo: vmw_powf.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

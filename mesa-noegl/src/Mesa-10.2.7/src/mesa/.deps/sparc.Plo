@@ -1,0 +1,5 @@
+sparc.lo: sparc/sparc.c /usr/include/stdc-predef.h sparc/sparc.h
+
+/usr/include/stdc-predef.h:
+
+sparc/sparc.h:

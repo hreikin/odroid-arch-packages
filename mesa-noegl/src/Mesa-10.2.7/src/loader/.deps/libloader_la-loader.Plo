@@ -1,0 +1,178 @@
+libloader_la-loader.lo: loader.c /usr/include/stdc-predef.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-hard.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/stdlib.h \
+ /usr/include/bits/string3.h /usr/include/assert.h /usr/include/dlfcn.h \
+ /usr/include/bits/dlfcn.h loader.h /usr/include/xf86drm.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/bits/select2.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/libdrm/drm.h /usr/include/linux/types.h \
+ /usr/include/asm/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/include/asm/posix_types.h /usr/include/asm-generic/posix_types.h \
+ /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
+ /usr/include/libdrm/drm_mode.h pci_id_driver_map.h \
+ ../../include/pci_ids/i915_pci_ids.h \
+ ../../include/pci_ids/i965_pci_ids.h \
+ ../../include/pci_ids/radeon_pci_ids.h \
+ ../../include/pci_ids/r200_pci_ids.h \
+ ../../include/pci_ids/r300_pci_ids.h \
+ ../../include/pci_ids/r600_pci_ids.h \
+ ../../include/pci_ids/radeonsi_pci_ids.h \
+ ../../include/pci_ids/vmwgfx_pci_ids.h /usr/include/libudev.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdarg.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-hard.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/string3.h:
+
+/usr/include/assert.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+loader.h:
+
+/usr/include/xf86drm.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/lib/gcc/armv7l-unknown-linux-gnueabihf/4.8.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/libdrm/drm.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/libdrm/drm_mode.h:
+
+pci_id_driver_map.h:
+
+../../include/pci_ids/i915_pci_ids.h:
+
+../../include/pci_ids/i965_pci_ids.h:
+
+../../include/pci_ids/radeon_pci_ids.h:
+
+../../include/pci_ids/r200_pci_ids.h:
+
+../../include/pci_ids/r300_pci_ids.h:
+
+../../include/pci_ids/r600_pci_ids.h:
+
+../../include/pci_ids/radeonsi_pci_ids.h:
+
+../../include/pci_ids/vmwgfx_pci_ids.h:
+
+/usr/include/libudev.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
