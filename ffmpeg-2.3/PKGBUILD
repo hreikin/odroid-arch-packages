@@ -71,7 +71,7 @@ build() {
     --enable-nonfree \
     --enable-thumb \
     --enable-neon \
-    --disable-poddocs
+    --disable-podpages
 
   make
   make tools/qt-faststart
