@@ -38,4 +38,4 @@ Unmount the partition:
 
 `umount root`
 
-Insert the SD card into the board, connect ethernet, and apply 5V power. Default user details are root/root and odroid/odroid
+Insert the SD card into the board, connect ethernet, and apply 5V power. Default user details are root/root and odroid/odroid.
