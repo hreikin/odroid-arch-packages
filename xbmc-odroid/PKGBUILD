@@ -109,7 +109,8 @@ build() {
 		--disable-libbluray \
 		--enable-texturepacker \
 		--with-cpu=cortex-a9 \
-		--host=armv7a-hardfloat-linux-gnueabi
+		--host=armv7a-hardfloat-linux-gnueabi \
+		--enable-exynos4
 
 	# Now (finally) build
 	make
