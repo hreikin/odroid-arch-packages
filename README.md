@@ -11,7 +11,7 @@ linux-odroidu-r4p0
 mali-odroid-r4p0
 mesa-libgl-noegl
 mesa-noegl
-xf86-video-armsoc-mdrjr
+xf86-video-armsoc-mdrjr     (xf86-video-armsoc-dsd)
 xf86-video-fbturbo-git
 xorg-server-dsd
 ```
