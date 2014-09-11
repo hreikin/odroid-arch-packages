@@ -10,8 +10,7 @@ arch=('armv7h')
 pkgdesc="ODROID Mali GL Driver"
 url="http://www.hardkernel.com/"
 license=('Proprietary')
-provides=('libegl' 'libgles' 'libMali' 'mesa-libgl')
-conflicts=('mesa-libgl')
+provides=('libegl' 'libgles' 'libMali')
 source=("http://builder.mdrjr.net/tools/mali-${pkgver}.txz")
 md5sums=('f88d6db219d2edfbbf7b2e4e816e4d57')
 
