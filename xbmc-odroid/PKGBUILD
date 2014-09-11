@@ -1,0 +1,133 @@
+# vim:set ft=sh:
+# Maintainer: BlackIkeEagle < ike DOT devolder AT gmail DOT com >
+# Contributor: DonVla <donvla@users.sourceforge.net>
+# Contributor: Ulf Winkelvos <ulf [at] winkelvos [dot] de>
+# Contributor: Ralf Barth <archlinux dot org at haggy dot org>
+# Contributor: B & monty - Thanks for your hints :)
+# Contributor: marzoul
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Brad Fanella <bradfanella@archlinux.us>
+# Contributor: [vEX] <niechift.dot.vex.at.gmail.dot.com>
+# Contributor: Zeqadious <zeqadious.at.gmail.dot.com>
+# Contributor: BartÅ‚omiej Piotrowski <bpiotrowski@archlinux.org>
+# Contributor: Maxime Gauduin <alucryd@gmail.com>
+#
+# Original credits go to Edgar Hucek <gimli at dark-green dot com>
+# for his xbmc-vdpau-vdr PKGBUILD at https://archvdr.svn.sourceforge.net/svnroot/archvdr/trunk/archvdr/xbmc-vdpau-vdr/PKGBUILD
+
+pkgname=xbmc-odroid
+pkgver=1
+pkgrel=1
+pkgdesc="XBMC Media Center Gotham mfc Odroid"
+provides=('xbmc')
+conflicts=('xbmc' 'xbmc-pulse' 'xbmc-svn')
+replaces=('xbmc-svn')
+arch=('armv7h')
+url="http://xbmc.org"
+license=('GPL2')
+depends=(
+'bluez-libs' 'curl' 'flac' 'glew' 'hicolor-icon-theme' 'lame' 'libaacs'
+'libass' 'libbluray' 'libcdio' 'libmariadbclient' 'libmicrohttpd' 'libmodplug'
+'libmpeg2' 'libpulse' 'libsamplerate' 'libssh' 'libva' 'libvdpau' 'libvorbis'
+'libxrandr' 'libxslt' 'lzo' 'mesa' 'python2-pillow' 'python2-simplejson'
+'rtmpdump' 'sdl_image' 'sdl_mixer' 'smbclient' 'taglib' 'tinyxml' 'xorg-xdpyinfo' 'yajl'
+)
+makedepends=(
+'afpfs-ng' 'boost' 'cmake' 'doxygen' 'git' 'gperf' 'jasper'
+'java-runtime' 'libcec' 'libnfs' 'libplist' 'nasm' 'shairplay'
+'swig' 'unzip' 'upower' 'zip'
+)
+optdepends=(
+'gdb: for meaningful backtraces in case of trouble - STRONGLY RECOMMENDED'
+'afpfs-ng: Apple shares support'
+'bluez: Blutooth support'
+'libnfs: NFS shares support'
+'libplist: AirPlay support'
+'libcec: Pulse-Eight USB-CEC adapter support'
+'lirc: Remote controller support'
+'pulseaudio: PulseAudio support'
+'shairplay: AirPlay support'
+'udisks: Automount external drives'
+'unrar: Archives support'
+'unzip: Archives support'
+'upower: Display battery level'
+)
+install="$pkgname.install"
+_commit=9d1e1f90e4ddcec2e834d9fc5119ff253022fb5d
+source=(
+	"git+https://github.com/hreikin/xbmc.git#branch=Gotham-mfc-devel"
+)
+sha256sums=(
+	'SKIP'
+)
+
+_prefix='/usr'
+
+pkgver() {
+	cd "$srcdir/$pkgname"
+	# suggested by marzoul
+	git log -1 --date=short --format="%cd.%h" | tr -d '-'
+}
+
+prepare() {
+	cd ${pkgname}
+
+	find -type f -name *.py -exec sed 's|^#!.*python$|#!/usr/bin/python2|' -i "{}" +
+	sed 's|^#!.*python$|#!/usr/bin/python2|' -i tools/depends/native/rpl-native/rpl
+	sed 's/python/python2/' -i tools/Linux/xbmc.sh.in
+}
+
+build() {
+	cd ${pkgname}
+
+	# Bootstrapping
+	./bootstrap
+
+	# Configuring XBMC
+	#export PYTHON_VERSION=2  # external python v2
+	./configure --enable-codec=mfc \
+		--enable-libcec \
+		--enable-x11 \
+		--enable-sdl \
+		--enable-xrandr \
+		--enable-neon \
+		--disable-debug \
+		--enable-optimizations \
+		--enable-ccache \
+		--enable-gles \
+		--enable-non-free  \
+		--disable-gl \
+		--disable-vdpau \
+		--disable-vaapi \
+		--disable-crystalhd \
+		--disable-openmax \
+		--disable-rsxs \
+		--disable-projectm \
+		--disable-fishbmc \
+		--disable-dvdcss \
+		--disable-optical-drive \
+		--disable-libbluray \
+		--enable-texturepacker \
+		--with-cpu=cortex-a9 \
+		--host=armv7a-hardfloat-linux-gnueabi
+
+	# Now (finally) build
+	make
+}
+
+package() {
+	cd ${pkgname}
+	# Running make install
+	make DESTDIR="$pkgdir" install
+
+	# Tools
+	install -Dm755 $srcdir/$pkgname/tools/TexturePacker/TexturePacker \
+		${pkgdir}${_prefix}/lib/xbmc/
+
+	# Licenses
+	install -dm755 ${pkgdir}${_prefix}/share/licenses/${pkgname}
+	for licensef in LICENSE.GPL copying.txt; do
+		mv ${pkgdir}${_prefix}/share/doc/xbmc/${licensef} \
+			${pkgdir}${_prefix}/share/licenses/${pkgname}
+	done
+}
