@@ -55,7 +55,7 @@ optdepends=(
 install="$pkgname.install"
 _commit=43b618dac0c381e858f27d7cb4cd1b27a8dbea90
 source=(
-	"git+https://github.com/hreikin/xbmc.git#branch=Gotham-mfc-devel"
+	"git+https://github.com/hreikin/xbmc-odroid.git#branch=Gotham-mfc-devel"
 )
 sha256sums=(
 	'SKIP'
