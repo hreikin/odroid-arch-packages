@@ -62,9 +62,7 @@ package_mesa-noegl() {
   depends=('libdrm' 'libvdpau' 'wayland' 'libxxf86vm' 'libxdamage' 'systemd' 'elfutils' 'llvm-libs')
   optdepends=('opengl-man-pages: for the OpenGL API man pages')
   provides=("mesa=${pkgver}" 'libglapi' 'osmesa' 'libgbm' 'libgles' 'libegl' 'khrplatform-devel')
-  conflicts=('mesa' 'libglapi' 'osmesa' 'libgbm')
-  replaces=('libglapi' 'osmesa' 'libgbm' 'libgles' 'libegl' 'khrplatform-devel')
-
+  
   mv -v ${srcdir}/fakeinstall/* ${pkgdir}
   # rename libgl.so to not conflict with blobs - may break gl.pc ?
   mv ${pkgdir}/usr/lib/libGL.so.1.2.0 	${pkgdir}/usr/lib/mesa-libGL.so.1.2.0
@@ -78,9 +76,7 @@ package_mesa-libgl-noegl() {
   pkgdesc="Mesa 3-D graphics library"
   depends=("mesa-noegl")
   provides=("mesa-libgl=${pkgver}" "libgl=${pkgver}")
-  conflicts=("mesa-libgl")
-  replaces=('libgl')
- 
+
   # See FS#26284
   install -m755 -d "${pkgdir}/usr/lib/xorg/modules/extensions"
   ln -s libglx.xorg "${pkgdir}/usr/lib/xorg/modules/extensions/libglx.so"
