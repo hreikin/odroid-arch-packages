@@ -53,7 +53,7 @@ optdepends=(
 'upower: Display battery level'
 )
 install="$pkgname.install"
-_commit=9d1e1f90e4ddcec2e834d9fc5119ff253022fb5d
+_commit=43b618dac0c381e858f27d7cb4cd1b27a8dbea90
 source=(
 	"git+https://github.com/hreikin/xbmc.git#branch=Gotham-mfc-devel"
 )
@@ -87,7 +87,6 @@ build() {
 	#export PYTHON_VERSION=2  # external python v2
 	./configure --enable-codec=mfc \
 		--enable-libcec \
-		--enable-sdl \
 		--enable-xrandr \
 		--enable-neon \
 		--disable-debug \
