@@ -35,7 +35,6 @@ build() {
     --with-gallium-drivers=svga \
     --with-dri-drivers=swrast \
     --with-llvm-shared-libs \
-    --enable-gallium-llvm \
     --disable-egl \
     --disable-gallium-egl \
     --enable-shared-glapi \
