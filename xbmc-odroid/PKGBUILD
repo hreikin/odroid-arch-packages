@@ -88,7 +88,6 @@ build() {
 	./configure --enable-codec=mfc \
 		--enable-libcec \
 		--enable-sdl \
-		--enable-x11 \
 		--enable-xrandr \
 		--enable-neon \
 		--disable-debug \
