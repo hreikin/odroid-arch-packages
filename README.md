@@ -30,7 +30,7 @@ $ cd git
 Then clone the repo :
 
 ```
-$ git clone https://github.com/hreikin/odroid-u2-pkgbuilds
+$ git clone https://github.com/hreikin/odroid-arch-pkgbuilds
 ```
 
 Then change directory into the file you wish to install, for example mesa-noegl :
