@@ -3,9 +3,9 @@
 
 buildarch=4
 
-pkgname=odroid-libgl
+pkgname=odroid-libgl-mali
 pkgver=r4p0
-pkgrel=2
+pkgrel=1
 arch=('armv7h')
 pkgdesc="ODROID Mali GL Driver"
 url="http://www.hardkernel.com/"
