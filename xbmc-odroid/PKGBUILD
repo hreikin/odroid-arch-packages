@@ -87,7 +87,6 @@ build() {
 	#export PYTHON_VERSION=2  # external python v2
 	./configure --enable-codec=mfc \
 		--enable-libcec \
-		--enable-x11 \
 		--enable-sdl \
 		--enable-xrandr \
 		--enable-neon \
