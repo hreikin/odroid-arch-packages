@@ -74,7 +74,7 @@ pkgbase = xbmc-odroid
 	conflicts = xbmc-pulse
 	conflicts = xbmc-svn
 	replaces = xbmc-svn
-	source = xbmc::git://github.com/xbmc/xbmc.git
+	source = https://github.com/hreikin/xbmc-odroid.git
 
 pkgname = xbmc-odroid
 
