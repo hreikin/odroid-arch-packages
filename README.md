@@ -9,18 +9,13 @@ Install/Build Instructions
 To install simply build the package with the `PKGBUILD` and `makepkg -s` and then install the resulting `pkg.tar.xz` file with pacman. The packages i recommend you install are :
 
 ```
-linux-odroidu-r4p0          (official repo = linux-odroid-u2)
-mali-odroid-r4p0            (official repo = odroid-libgl ?)
-mesa-libgl-noegl            (official repo = odroid-libgl ?)
-mesa-noegl                  (official repo = odroid-libgl ?)
-xf86-video-armsoc-mdrjr     (official repo = xf86-video-armsoc-odroid)
-xf86-video-fbturbo-git      (official repo = xf86-video-fbturbo-git)
+odroid-libgl-mali           (official repo = odroid-libgl - conflicts with mesa-libgl)
 xorg-server-dsd             (official repo = xorg-server)
 ```
 You may also need 'xf86-video-fbdev' from the official repos.
 
-Method 1
---------
+How to Build/Install
+--------------------
 Change directory to where you want to clone the repo :
 
 ```
@@ -33,10 +28,10 @@ Then clone the repo :
 $ git clone https://github.com/hreikin/odroid-arch-pkgbuilds
 ```
 
-Then change directory into the file you wish to install, for example mesa-noegl :
+Then change directory into the file you wish to install, for example odroid-libgl-mali :
 
 ```
-$ cd mesa-noegl
+$ cd odroid-libgl-mali
 ```
 
 Then take a look at the 'PKGBUILD' to check everything is ok with nano before running 'makepkg -s' :
@@ -49,8 +44,8 @@ $ makepkg -s
 Once 'makepkg' finishes it will create a 'pkg.tar.xz' file (maybe more than 1!) which can be installed with pacman like so :
 
 ```
-$ sudo pacman -U mesa-noegl-10.2.7-1-armv7h.pkg.tar.xz
-$ sudo pacman -U mesa-libgl-noegl-10.2.7-1-armv7h.pkg.tar.xz
+$ sudo pacman -U odroid-libgl-mali-r4p0-1-armv7h.pkg.tar.xz
+$ sudo pacman -U odroid-libgl-mali-r4p0-1-armv7h.pkg.tar.xz
 ```
 Once you have all the files installed you need to edit your '/etc/xorg.conf' mine has :
 
