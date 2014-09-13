@@ -1,5 +1,5 @@
-Odroid U2/3 - Arch Linux - Mali/xorg-armsoc
-===========================================
+Odroid U2/3 - Arch Linux - Mali/xorg-server-dsd Patch
+=====================================================
 This is  fork of gripped's repo odroid-u2-pkgbuilds, i made this to try and update the PKGBUILD's and keep them moving with Arch, the orignal README will be left in the repo for reference, the other libs are still available, i made this repo for cleanliness/order/my own sanity and it only includes packages i am working on.
 
 Most of these packages arent needed any more due to ones provided in the official repo, the problem i run into is odroid-libgl conflicts with mesa-libgl but doesnt provide all the functionality and breaks/crashes alot ! To get around this i copied a PKGBUILD from a pull request for odroid-libgl which removes the conflict of mesa-libgl so they can be installed side by side, you will find that in the odroid-libgl-mali folder.
@@ -12,7 +12,16 @@ To install simply build the package with the `PKGBUILD` and `makepkg -s` and the
 odroid-libgl-mali           (official repo = odroid-libgl - conflicts with mesa-libgl)
 xorg-server-dsd             (official repo = xorg-server)
 ```
-You may also need 'xf86-video-fbdev' from the official repos.
+
+You will also need these packages from the official repos (amongst others) :
+
+```
+linux-odroid-u2
+xf86-video-armsoc-odroid
+xf86-video-fbturbo-git
+xf86-video-fbdev
+mesa-libgl
+```
 
 How to Build/Install
 --------------------
@@ -47,6 +56,7 @@ Once 'makepkg' finishes it will create a 'pkg.tar.xz' file (maybe more than 1!) 
 $ sudo pacman -U odroid-libgl-mali-r4p0-1-armv7h.pkg.tar.xz
 $ sudo pacman -U odroid-libgl-mali-r4p0-1-armv7h.pkg.tar.xz
 ```
+
 Once you have all the files installed you need to edit your '/etc/xorg.conf' mine has :
 
 ```
