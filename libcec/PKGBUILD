@@ -1,0 +1,36 @@
+# Maintainer: Cedric Girard <girard.cedric@gmail.com>
+
+pkgname=libcec-odroid
+epoch=1
+pkgver=2.1.4.4.ga560d24
+pkgrel=1.1
+pkgdesc="Pulse-Eight's libcec for the Pulse-Eight USB-CEC adapter"
+arch=('armv7h')
+url="https://github.com/mdrjr/libcec"
+license=('GPL')
+makedepends=('git')
+depends=('udev>=151' 'lockdev')
+provides=('libcec')
+options=('!libtool')
+source=('https://github.com/mdrjr/libcec.git')
+md5sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir"/libcec
+  git describe --tags | sed 's|libcec-||;s|-|.|g'
+}
+
+build() {
+  cd "$srcdir"/libcec
+
+  autoreconf -vif
+  ./configure --prefix=/usr --enable-exynos
+  make
+}
+
+package() {
+  cd "$srcdir"/libcec
+  make DESTDIR="$pkgdir/" install
+}
+
+# vim:set ts=2 sw=2 et:
