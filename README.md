@@ -18,7 +18,7 @@ Then add these lines to the end of the file :
 ```
 [odroidu]
 SigLevel = Never
-Server = http://odroidxu.leeharris.me.uk/u2
+Server = http://oph.mdrjr.net/hreikin/
 ```
 Save and exit before then updating pacman :
 ```
