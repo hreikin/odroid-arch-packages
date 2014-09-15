@@ -18,7 +18,7 @@ Then add these lines to the end of the file :
 ```
 [odroidu]
 SigLevel = Never
-Server = http://oph.mdrjr.net/hreikin/
+Server = http://oph.mdrjr.net/hreikin/repo/
 ```
 Save and exit before then updating pacman :
 ```
