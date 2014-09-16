@@ -53,7 +53,7 @@ optdepends=(
 'upower: Display battery level'
 )
 install="$pkgname.install"
-_commit=43b618dac0c381e858f27d7cb4cd1b27a8dbea90
+_commit=eac52eff4783b5cddd9aa9733fc039404a776068
 source=(
 	"git+https://github.com/hreikin/xbmc-odroid.git#branch=Gotham-mfc-devel"
 )
@@ -84,11 +84,12 @@ build() {
 	./bootstrap
 
 	# Configuring XBMC
-	#export PYTHON_VERSION=2  # external python v2
+	export PYTHON_VERSION="2.7"  # external python v2
 	./configure --enable-codec=mfc \
 		--enable-libcec \
 		--enable-xrandr \
 		--enable-neon \
+		--enable-nfs \
 		--disable-debug \
 		--enable-optimizations \
 		--enable-ccache \
