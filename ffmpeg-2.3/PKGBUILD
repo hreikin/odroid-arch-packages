@@ -7,7 +7,7 @@
 # ALARM: Kevin Mihelich <kevin@archlinuxarm.org>
 #  - drop x265 until it builds on ARM
 
-pkgname=ffmpeg-odroid
+pkgname=ffmpeg
 pkgver=2.3.3
 pkgrel=2.1
 epoch=1
