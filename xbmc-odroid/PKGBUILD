@@ -87,6 +87,8 @@ build() {
 	export PYTHON_VERSION="2.7"  # external python v2
 	./configure --enable-codec=mfc \
 		--enable-libcec \
+		--enable-x11 \
+		--enable-sdl \
 		--enable-xrandr \
 		--enable-neon \
 		--enable-nfs \
@@ -103,13 +105,9 @@ build() {
 		--disable-rsxs \
 		--disable-projectm \
 		--disable-fishbmc \
-		--disable-dvdcss \
-		--disable-optical-drive \
-		--disable-libbluray \
 		--enable-texturepacker \
 		--with-cpu=cortex-a9 \
-		--host=armv7a-hardfloat-linux-gnueabi \
-		--enable-exynos4
+		--host=armv7a-hardfloat-linux-gnueabi 
 
 	# Now (finally) build
 	make
