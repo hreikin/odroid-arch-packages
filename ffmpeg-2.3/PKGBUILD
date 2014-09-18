@@ -7,26 +7,27 @@
 # ALARM: Kevin Mihelich <kevin@archlinuxarm.org>
 #  - drop x265 until it builds on ARM
 
-pkgname=ffmpeg
+pkgname=ffmpeg-odroid
 pkgver=2.3.3
 pkgrel=2.1
 epoch=1
 pkgdesc='Complete and free Internet live audio and video broadcasting solution'
-arch=('i686' 'x86_64' 'armv7h')
+arch=('armv7h')
 url='http://ffmpeg.org/'
 license=('GPL')
+provides='ffmpeg'
 depends=(
       'alsa-lib' 'bzip2' 'fontconfig' 'gnutls' 'gsm' 'lame' 'libass' 'libvdpau'
       'libbluray' 'libmodplug' 'libpulse' 'libtheora' 'libva' 'libvorbis' 'libvpx'
       'opencore-amr' 'openjpeg' 'opus' 'rtmpdump' 'schroedinger' 'sdl' 'speex'
       'v4l-utils' 'libx264' 'xvidcore' 'zlib')
 makedepends=('libvdpau' 'yasm' 'x264')
-source=(http://ffmpeg.org/releases/$pkgname-$pkgver.tar.bz2{,.asc})
+source=(http://ffmpeg.org/releases/ffmpeg-$pkgver.tar.bz2{,.asc})
 md5sums=('72361d3b8717b6db3ad2b9da8df7af5e'
          'SKIP')
 
 build() {
-  cd $pkgname-$pkgver
+  cd ffmpeg-$pkgver
 
   ./configure \
     --prefix=/usr \
@@ -79,7 +80,7 @@ build() {
 }
 
 package() {
-  cd $pkgname-$pkgver
+  cd ffmpeg-$pkgver
   make DESTDIR="$pkgdir" install install-man
   install -Dm755 tools/qt-faststart "$pkgdir"/usr/bin/qt-faststart
 }
