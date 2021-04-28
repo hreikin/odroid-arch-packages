@@ -1,3 +1,8 @@
+---
+layout: page
+title: Create SD Card
+permalink: /create-sd/
+---
 SD Card Creation
 ----------------
 

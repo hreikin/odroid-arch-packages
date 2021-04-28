@@ -1,3 +1,8 @@
+---
+layout: page
+title: Create Backup
+permalink: /create-backup/
+---
 How to backup an image
 ----------------------
 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Original README - For Reference
+permalink: /original-readme/
+---
 Original README - for reference
 ===============================
 If you want to try the latest Mali blob with dsd's xf86-video-armsoc as dicussed here :
