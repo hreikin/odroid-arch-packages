@@ -35,7 +35,7 @@ plugins:
 
 # Menu settings
 header_pages:
-  - index.markdown
+  - index.html
   - README.md
   - how-to-backup.md
   - how-to-create-sd.md
